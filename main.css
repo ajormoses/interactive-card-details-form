@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background: url("./images/bg-main-mobile.png") top center;
+  height: 20rem;
+}
+
+.atm-card {
+  padding-top: 4rem;
+}
+
+.back-atm {
+  background: url("./images/bg-card-back.png") no-repeat top center;
+  border-radius: 0.5rem;
+  height: 12rem;
+  width: 90%;
+  margin-left: auto;
+  position: relative;
+}
+
+.front-atm {
+  background: url("./images/bg-card-front.png") top center;
+  border-radius: 0.5rem;
+  height: 12rem;
+  width: 78%;
+  margin-top: -3.2rem;
+  position: absolute;
+  z-index: 2;
+  padding: 1.5rem;
+}
+
+.cvc {
+  position: absolute;
+  top: 58%;
+  right: 1.5rem;
+}
+
+.cvc-no {
+  color: hsl(0, 0%, 100%);
+}
+
+.dot {
+  display: flex;
+  align-items: center;
+}
+
+.big-dot {
+  background: hsl(0, 0%, 100%);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.small-dot {
+  border: 2px solid hsl(0, 0%, 100%);
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  margin-left: 0.8rem;
+}
+
+.card-number {
+  padding: 2.5rem 0 1rem;
+}
+
+.card-number ul li {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.card-name-exp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 100%);
+}
+
+article {
+  padding: 8rem 0 2rem;
+}
+
+input {
+  display: block;
+  margin: 1rem 0;
+  border: 1px solid hsl(270, 3%, 87%);
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.1rem;
+}
+
+label {
+  font-size: 1.2rem;
+  color: hsl(278, 68%, 11%);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.card-exp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.confirm {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  background: hsl(278, 68%, 11%);
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.modal {
+  text-align: center;
+  display: none;
+}
+
+.modal h1 {
+  margin: 1.5rem 0 1rem;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+.modal p {
+  font-size: 1.1rem;
+  color: hsl(270, 2%, 66%);
+}
+
+.continue {
+  margin-top: 2.3rem;
+  width: 100%;
+  padding: 1.3rem 0;
+  font-size: 1.3rem;
+  background: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.error {
+  padding-bottom: 1rem;
+  color: hsl(0, 100%, 66%);
+  display: none;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .error {
+    font-size: 0.7rem;
+  }
+
+  .cvc-no,
+  #card-number {
+    font-size: 1.1rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input {
+    padding: 1rem;
+  }
+
+  input::placeholder {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    width: 85%;
+  }
+
+  .back-atm {
+    width: 70%;
+  }
+
+  .front-atm {
+    width: 65%;
+  }
+
+  .cvc-no,
+  #card-number {
+    font-size: 1.5rem;
+  }
+
+  .cvc {
+    top: 55%;
+  }
+
+  .username,
+  .month,
+  .year {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .back-atm {
+    width: 60%;
+  }
+
+  .front-atm {
+    width: 55%;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 1.5rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .confirm {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .error {
+    font-size: 1.2rem;
+  }
+
+  .modal h1 {
+    font-size: 2.5rem;
+  }
+
+  .modal p {
+    font-size: 1.5rem;
+  }
+
+  .continue {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .back-atm {
+    width: 50%;
+  }
+
+  .front-atm {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  main {
+    position: relative;
+    height: 100vh;
+  }
+
+  .back-atm {
+    width: 22rem;
+    position: absolute;
+    top: 23rem;
+    left: 10rem;
+  }
+
+  .front-atm {
+    width: 22rem;
+    height: 13rem;
+    top: 30%;
+    left: 5rem;
+  }
+
+  .header {
+    position: absolute;
+    left: 0;
+    width: 20rem;
+    height: 100%;
+    background: url("./images/bg-main-desktop.png") no-repeat top center;
+  }
+
+  #form,
+  .modal {
+    position: absolute;
+    top: 25%;
+    width: 30%;
+    right: 15%;
+  }
+
+  .modal h1 {
+    font-size: 2rem;
+  }
+
+  .modal p {
+    font-size: 1rem;
+  }
+
+  .continue {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    margin: 0.8rem 0;
+  }
+
+  input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .confirm {
+    padding: 1.1rem 0;
+    font-size: 1.1rem;
+  }
+
+  .error {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .back-atm {
+    width: 23rem;
+    top: 27rem;
+    left: 13rem;
+  }
+
+  .front-atm {
+    width: 23rem;
+    height: 13rem;
+    top: 30%;
+    left: 8rem;
+  }
+
+  .header {
+    width: 26rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .back-atm {
+    top: 25rem;
+    width: 24rem;
+    left: 15rem;
+  }
+
+  .front-atm {
+    width: 24rem;
+    left: 11rem;
+  }
+
+  .header {
+    width: 30rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .back-atm {
+    top: 28rem;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  main {
+    width: 1800px;
+    margin: auto;
+  }
+}
