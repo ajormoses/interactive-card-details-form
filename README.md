@@ -13,7 +13,7 @@ Thanks for checking out this front-end coding challenge.
 
 - [Links](#links)
 - Solution URL: [ https://github.com/ajormoses/interactive-card-details-form.git ]
-- Live Site URL: [https://ajormoses/interactive-card-details-form/ ]
+- Live Site URL: [ https://ajormoses.github.io/interactive-card-details-form/ ]
 
 - [Built with](#built-with)
   I use HTML, CSS, JAVASCRIPT to build this design

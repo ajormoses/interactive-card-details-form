@@ -116,10 +116,14 @@ input {
 }
 
 label {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: hsl(278, 68%, 11%);
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
 }
 
 .card-exp {
@@ -189,10 +193,6 @@ label {
 
   input {
     padding: 1rem;
-  }
-
-  input::placeholder {
-    font-size: 0.8rem;
   }
 }
 
